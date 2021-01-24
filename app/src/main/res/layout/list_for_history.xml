@@ -46,6 +46,7 @@
             android:padding="10dp"
             android:textStyle="bold"
             android:text="call to company"
+            android:layout_weight="1"
             android:textAllCaps="false"
             android:textColor="#1B219F" />
 
@@ -58,6 +59,7 @@
             android:background="@drawable/button_orange"
             android:padding="10dp"
             android:text="customer paid"
+            android:layout_weight="1"
             android:textAllCaps="false"
             android:textColor="#1B219F" />
     </LinearLayout>
