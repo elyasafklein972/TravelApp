@@ -83,7 +83,7 @@ public class NavigationDrawerActivity extends AppCompatActivity {
                     Toast.makeText(NavigationDrawerActivity.this, "Data Not Inserted", Toast.LENGTH_LONG).show();
             }
         });
-
+//
 //
 //        //Insert Travels
 //        try {
