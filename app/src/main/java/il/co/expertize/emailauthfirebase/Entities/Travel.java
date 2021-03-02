@@ -8,8 +8,10 @@ import androidx.room.TypeConverter;
 import androidx.room.TypeConverters;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import il.co.expertize.emailauthfirebase.Data.UserLocation;
@@ -120,6 +122,8 @@ public class Travel {
     public HashMap<String, Boolean> getCompany() {
         return company;
     }
+
+
 
     public Travel() {
         this.arrivalDate=new Date(2020-12-12);

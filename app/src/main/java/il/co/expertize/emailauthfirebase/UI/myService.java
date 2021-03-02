@@ -23,7 +23,7 @@ import il.co.expertize.emailauthfirebase.Entities.Travel;
 
 public class myService extends Service {
     Integer sum = 0;
-    static Integer numOfTravel = 0;
+    static Integer numOfTravel = 100000000;
     static Integer countOfTravel = 0;
     ITravelDataSource travelDataSource;
     FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
@@ -53,7 +53,9 @@ public class myService extends Service {
                         intent1.setAction("com.javacodegeeks.android.A_NEW_TRAVEL");
                         sendBroadcast(intent1);
                         numOfTravel=countOfTravel;
+                        countOfTravel = 0;
                     }
+                    numOfTravel=0;
                 }
             }
 
@@ -71,7 +73,7 @@ public class myService extends Service {
     public void onDestroy() {
         super.onDestroy();
         if(!isThreadOn)
-            Toast.makeText(this,"onDestroy. sum is:" + sum, Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"thanks of using travel app", Toast.LENGTH_LONG).show();
         sum=0;
         Log.d(TAG," onDestroy");
     }

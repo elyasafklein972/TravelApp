@@ -63,7 +63,6 @@ public class NavigationDrawerActivity extends AppCompatActivity {
         Intent intent=getIntent();
         String recieveEmail=intent.getStringExtra(LoginActivity.Email);
         name=findViewById(R.id.textName);
-
         database = FirebaseDatabase.getInstance();
         userRef = database.getReference(USERS);
 
@@ -198,6 +197,9 @@ public class NavigationDrawerActivity extends AppCompatActivity {
                 int id = item.getItemId();
                 switch(id)
                 {
+                    case R.id.Add_Travel:
+                        loadFragment(new add_travel());
+                        return true;
                     case R.id.History_Travel:
                         loadFragment(new  HistoryTravelsFragment());
                         return true;
@@ -207,9 +209,11 @@ public class NavigationDrawerActivity extends AppCompatActivity {
                     case R.id.Company_Travel:
                         loadFragment(new CompanyTravelsFragment());
                         return true;
-                        case R.id.exit:
-                            stopService(new Intent(il.co.expertize.emailauthfirebase.UI.NavigationDrawerActivity.this, myService.class));
+                        case R.id.log_out:
                        finish();
+                    case R.id.exit:
+                        stopService(new Intent(il.co.expertize.emailauthfirebase.UI.NavigationDrawerActivity.this, myService.class));
+                        finishAffinity();
                     default:
                         return true;
                 }

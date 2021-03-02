@@ -71,6 +71,7 @@ public class CompanyAdapter extends BaseAdapter {
     @Override
     public int getCount() {
         return items.size(); //returns total item in the list
+
     }
 
     @Override
@@ -81,6 +82,7 @@ public class CompanyAdapter extends BaseAdapter {
     @Override
     public long getItemId(int position) {
         return position;
+        
     }
 
 

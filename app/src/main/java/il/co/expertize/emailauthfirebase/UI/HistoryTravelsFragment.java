@@ -70,7 +70,7 @@ public class HistoryTravelsFragment extends Fragment {
 
         String travelDate ;
                 travelDate =  "2020"+"-"+"1"+"-"+"1";
-                 String  travelDate2 =  "2021"+"-"+"1"+"-"+"1";
+                 String  travelDate2 =  "2022"+"-"+"12"+"-"+"12";
         try {
             start = new Travel.DateConverter().fromTimestamp(travelDate);
             end = new Travel.DateConverter().fromTimestamp(travelDate2);

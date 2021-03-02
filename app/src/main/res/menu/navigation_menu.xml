@@ -4,27 +4,36 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/History_Travel"
-            android:icon="@drawable/history"
-            android:title="History Travel" />
+            android:id="@+id/Add_Travel"
+            android:icon="@drawable/add_travel"
+            android:title="Add Travel" />
         <item
             android:id="@+id/Registered_Travel"
-            android:icon="@drawable/register2"
+            android:icon="@drawable/person"
             android:title="Registered Travel" />
         <item
             android:id="@+id/Company_Travel"
             android:icon="@drawable/company"
             android:title="Company Travel" />
+        <item
+        android:id="@+id/History_Travel"
+        android:icon="@drawable/history"
+        android:title="History Travel" />
 
     </group>
 
-    <item android:title="כללי">
+    <item android:title="general">
         <menu>
             <item
-                android:id="@+id/exit"
+                android:id="@+id/log_out"
                 android:icon="@drawable/logout"
                 android:title="log out"/>
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/close"
+                android:title="exit"/>
 
         </menu>
     </item>
